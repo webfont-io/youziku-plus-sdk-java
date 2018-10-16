@@ -24,4 +24,4 @@ SDK的返回值主要内容是@font-face语句，@font-face语句是CSS3中的�
 　　　commons-codec-1.2<br />
 　　　fastjson-1.2.5<br />
    
-3.<a href="https://github.com/youziku/youziku-sdk-java/raw/master/sdk%E4%B8%8B%E8%BD%BD/youziku-service-plus.sdk-1.0.0.zip">sdk下载</a><br />
+3.<a href="https://github.com/youziku/youziku-plus-sdk-java/raw/master/sdk%E4%B8%8B%E8%BD%BD/youziku-service-plus.sdk-1.0.0.zip">sdk下载</a><br />
