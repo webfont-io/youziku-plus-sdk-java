@@ -28,10 +28,10 @@ SDK的返回值主要内容是@font-face语句，@font-face语句是CSS3中的�
 2)maven方式(推荐)
 ``` xml
    	<dependency>
-			<groupId>com.github.youziku</groupId>
-			<artifactId>youziku.service-plus.sdk</artifactId>
-			<version>1.0.0</version>
-		</dependency>
+	   <groupId>com.github.youziku</groupId>
+           <artifactId>youziku.service-plus.sdk</artifactId>
+           <version>1.0.0</version>
+	</dependency>
 ```
 # 三、引用
 
@@ -44,14 +44,14 @@ public static final IYouzikuServicePlusClient YouzikuClient = new YouzikuService
 ### 2.1.处理全部文本-所有格式
 ``` java
       RamSortUnicodeApiOption option = new RamSortUnicodeApiOption();
-		//处理汉字
-		option.setRanChinese(true);
-		//处理字母
-		option.setRanEnglish(true);
-		//处理数字
-		option.setRanNumber(true);
+      //处理汉字
+      option.setRanChinese(true);
+      //处理字母
+      option.setRanEnglish(true);
+      //处理数字
+      option.setRanNumber(true);
       
-       RamUnicodeItemResult fontFaceResult= YouzikuClient
+      RamUnicodeItemResult fontFaceResult= YouzikuClient
 		 .getFontFace(new RamUnicodeFontApiParam(
 		 "xxx", "有字库，让中文跃上云端！",
 		 "#id-1", true,option));
@@ -59,12 +59,12 @@ public static final IYouzikuServicePlusClient YouzikuClient = new YouzikuService
 ### 2.2.处理全部文本-WOFF
 ``` java
       RamSortUnicodeApiOption option = new RamSortUnicodeApiOption();
-		//处理汉字
-		option.setRanChinese(true);
-		//处理字母
-		option.setRanEnglish(true);
-		//处理数字
-		option.setRanNumber(true);
+      //处理汉字
+      option.setRanChinese(true);
+      //处理字母
+      option.setRanEnglish(true);
+      //处理数字
+      option.setRanNumber(true);
       
       RamUnicodeItemResult wofffontFaceResult = YouzikuClient
 		 .getWoffFontFace(new RamUnicodeFontApiParam(
@@ -74,13 +74,13 @@ public static final IYouzikuServicePlusClient YouzikuClient = new YouzikuService
 ```
 ### 2.3.处理指定文本-所有格式
 ``` java
-       RamSortUnicodeApiOption option = new RamSortUnicodeApiOption();
-		//处理汉字
-		option.setRanChinese(true);
-		//处理字母
-		option.setRanEnglish(true);
-		//处理数字
-		option.setRanNumber(true);
+      RamSortUnicodeApiOption option = new RamSortUnicodeApiOption();
+      //处理汉字
+      option.setRanChinese(true);
+      //处理字母
+      option.setRanEnglish(true);
+      //处理数字
+      option.setRanNumber(true);
       
        RamUnicodeItemResult fontFaceResult= YouzikuClient
 		 .getScopeFontFace(new RamUnicodeScopeFontApiParam(
@@ -90,13 +90,13 @@ public static final IYouzikuServicePlusClient YouzikuClient = new YouzikuService
 ### 2.4.处理指定文本-WOFF
 
 ``` java
-    RamSortUnicodeApiOption option = new RamSortUnicodeApiOption();
-		//处理汉字
-		option.setRanChinese(true);
-		//处理字母
-		option.setRanEnglish(true);
-		//处理数字
-		option.setRanNumber(true);
+     RamSortUnicodeApiOption option = new RamSortUnicodeApiOption();
+      //处理汉字
+      option.setRanChinese(true);
+      //处理字母
+      option.setRanEnglish(true);
+      //处理数字
+      option.setRanNumber(true);
       
      RamUnicodeItemResult wofffontFaceResult = YouzikuClient
 		 .getScopeWoffFontFace(new RamUnicodeScopeFontApiParam(
