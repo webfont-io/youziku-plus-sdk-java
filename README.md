@@ -54,7 +54,7 @@ public static final IYouzikuServicePlusClient YouzikuClient = new YouzikuService
       RamUnicodeItemResult fontFaceResult= YouzikuClient
 		 .getFontFace(new RamUnicodeFontApiParam(
 		 "xxx", "有字库，让中文跃上云端！",
-		 "#id-1", true,option));
+		 "#id-1", false,option));
 ```
 ### 2.2.处理全部文本-WOFF
 ``` java
@@ -70,7 +70,7 @@ public static final IYouzikuServicePlusClient YouzikuClient = new YouzikuService
 		 .getWoffFontFace(new RamUnicodeFontApiParam(
 		 "xxx",
 		 "有字库，让中文跃上云端！",
-		 ".class-1",option));
+		 ".class-1",false,option));
 ```
 ### 2.3.处理指定文本-所有格式
 ``` java
@@ -85,7 +85,7 @@ public static final IYouzikuServicePlusClient YouzikuClient = new YouzikuService
        RamUnicodeItemResult fontFaceResult= YouzikuClient
 		 .getScopeFontFace(new RamUnicodeScopeFontApiParam(
 		 "xxx","有字库，让中文跃上云端！",
-		 ".class-2", true,option,"有字库"));
+		 ".class-2", false,option,"有字库"));
 ```
 ### 2.4.处理指定文本-WOFF
 
@@ -101,5 +101,5 @@ public static final IYouzikuServicePlusClient YouzikuClient = new YouzikuService
      RamUnicodeItemResult wofffontFaceResult = YouzikuClient
 		 .getScopeWoffFontFace(new RamUnicodeScopeFontApiParam(
 		 "xxx","有字库，让中文跃上云端！",
-		 "#id-2",option,"有字库"));
+		 "#id-2",false,option,"有字库"));
 ```
